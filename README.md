@@ -26,11 +26,28 @@ BuaaaBotは、ほとんどの機能をAPIに頼っているので、各自でAPI
     git clone https://github.com/buachigithub/buaaabot.git
     cd buaaabot
     ```
-2. 必要なパッケージをインストール！:
+2. 仮想環境を作る:
+   ```bash
+   python -m venv env
+   ```
+3. 仮想環境に入る:<br/>
+   Linux系の方はこちら
+   ```bash
+    source env/bin/activate
+   ```
+    Windowsの方はこちら
+   ```pwsh
+    .\env\Scripts\activate
+   ```
+   出る時はこちら
+   ```bash
+   deactivate
+   ```
+4. 必要なパッケージをインストール！:
     ```bash
     pip install -r requirements.txt
     ```
-3. `.env`ファイルを以下に合わせて作成し、Discordなどのトークンを入力してください：
+5. `.env`ファイルを以下に合わせて作成し、Discordなどのトークンを入力してください：
     ```
     DISCORD_TOKEN=""
     BINGKEY=""
@@ -45,10 +62,10 @@ BuaaaBotは、ほとんどの機能をAPIに頼っているので、各自でAPI
 - REMOVEBG：背景の切り抜きに使用
 - GEMINI：精度より速度を求める際や、画像の処理をする際に使用
   
-5. `bot.py`内の116行目のchannel.idを、起動通知してほしいテキストチャンネルのIDに置き換える
+6. `bot.py`内の116行目のchannel.idを、起動通知してほしいテキストチャンネルのIDに置き換える
    （実装がめんどくさかっただけです、いつか簡単に変更できるよう実装します）
 
-6. あなたのPCに合った、最新のchromedriverをダウンロードし、bot.pyと同じ場所に配置してください！
+7. あなたのPCに合った、最新のchromedriverをダウンロードし、bot.pyと同じ場所に配置してください！
    [ダウンロード](https://googlechromelabs.github.io/chrome-for-testing/#stable)
 
 ## 🚀 使い方
