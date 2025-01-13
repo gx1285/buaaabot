@@ -23,7 +23,7 @@ BuaaaBotは、ほとんどの機能をAPIに頼っているので、各自でAPI
 
 1. リポジトリをクローン！:
     ```bash
-    git clone https://github.com/buachigithub/buaaabot.git
+    git clone https://github.com/buaaabot/buaaabot.git
     cd buaaabot
     ```
 2. 仮想環境を作る:
